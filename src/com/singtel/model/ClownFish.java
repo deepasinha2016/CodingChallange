@@ -9,4 +9,9 @@ public class ClownFish  extends  Fish{
     public void joke(){
         System.out.println("I joke");
     }
+
+    @Override
+    public String toString() {
+        return "ClownFish:" + super.toString();
+    }
 }

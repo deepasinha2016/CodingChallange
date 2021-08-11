@@ -1,8 +1,10 @@
 package com.singtel.model;
 
-public class Dolphin {
+public class Dolphin implements IFish{
 
-    public void swim(){
+
+    @Override
+    public void swim() {
         System.out.println("I can swim");
     }
 }

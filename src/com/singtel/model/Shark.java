@@ -10,4 +10,9 @@ public class Shark extends Fish {
     public void eat(){
         System.out.println("I eat other fish");
     }
+
+    @Override
+    public String toString() {
+        return "Shark:" + super.toString();
+    }
 }

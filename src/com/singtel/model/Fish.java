@@ -1,6 +1,6 @@
 package com.singtel.model;
 
-public class Fish {
+public class Fish implements  IFish{
 
     private String color,size;
 
@@ -12,8 +12,12 @@ public class Fish {
         this.size = size;
     }
 
-    public void swim(){
-        System.out.println("I am swimming");
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "color='" + color + '\'' +
+                ", size='" + size + '\'' +
+                '}';
     }
 
     public String getColor() {
@@ -22,5 +26,10 @@ public class Fish {
 
     public String getSize() {
         return size;
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("I can swim");
     }
 }

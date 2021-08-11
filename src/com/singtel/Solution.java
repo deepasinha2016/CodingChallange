@@ -18,10 +18,11 @@ public class Solution {
         bird = obj.getInstanceForBird("rooster");
         bird.sing();
        Fish fish = obj.getInstanceForFish("Shark");
-       fish.swim();
-        System.out.println(fish.getColor());
+        System.out.println(fish.toString());
         Shark shark = new Shark();
         shark.eat();
+        fish = obj.getInstanceForFish("clownfish");
+        System.out.println(fish.toString());
 
     }
 
