@@ -1,12 +1,9 @@
 package com.singtel.factory;
 
-import com.singtel.model.Bird;
-import com.singtel.model.Chicken;
-import com.singtel.model.Duck;
-import com.singtel.model.Rooster;
+import com.singtel.model.*;
 
 public class ObjFactory {
-        public Bird getInstance(String str){
+        public Bird getInstanceForBird(String str){
 
             if(str.equalsIgnoreCase("Duck"))
                 return new Duck(true,false);
@@ -17,6 +14,15 @@ public class ObjFactory {
             else
                 return new Bird(false,false);
 
+        }
+
+        public Fish getInstanceForFish(String str){
+            if(str.equalsIgnoreCase("Shark"))
+                return new Shark();
+            else if(str.equalsIgnoreCase("ClownFish"))
+                return new ClownFish();
+            else
+                return new Fish();
         }
 
 }
