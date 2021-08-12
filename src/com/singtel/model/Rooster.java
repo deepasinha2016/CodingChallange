@@ -2,8 +2,8 @@ package com.singtel.model;
 
 public class Rooster extends Bird{
 
-    public Rooster(boolean canSwim, boolean canFly) {
-        super(canSwim, canFly);
+    public Rooster() {
+        super(false,false, true);
     }
 
     @Override

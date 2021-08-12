@@ -6,13 +6,13 @@ public class ObjFactory {
         public Bird getInstanceForBird(String str){
 
             if(str.equalsIgnoreCase("Duck"))
-                return new Duck(true,false);
+                return new Duck();
             else if(str.equalsIgnoreCase("Chicken"))
-                return new Chicken(false,false);
+                return new Chicken();
             else if(str.equalsIgnoreCase("Rooster"))
-                return new Rooster(false,false);
+                return new Rooster();
             else
-                return new Bird(false,false);
+                return new Bird(false,false,false);
 
         }
 
@@ -23,6 +23,15 @@ public class ObjFactory {
                 return new ClownFish();
             else
                 return new Fish();
+        }
+
+        public Animal getInstanceForAnimal(String str){
+            if(str.equalsIgnoreCase("Butterfly"))
+                return new Butterfly();
+            else if(str.equalsIgnoreCase("Caterpillar"))
+                return new Caterpillar();
+            else
+                return new Animal();
         }
 
 }

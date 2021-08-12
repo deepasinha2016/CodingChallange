@@ -2,8 +2,8 @@ package com.singtel.model;
 
 public class Parrot extends Bird{
     private String nearByPlace;
-    public Parrot(boolean canSwim, boolean canFly) {
-        super(canSwim, canFly);
+    public Parrot() {
+        super(false, true,true);
     }
 
     public Parrot(String place){

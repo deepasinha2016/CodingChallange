@@ -2,9 +2,13 @@ package com.singtel.model;
 
 public class Duck extends Bird{
 
-    public Duck(boolean canSwim, boolean canFly){
-        super(canSwim,canFly);
+
+    public Duck(){
+
+        super(true,false,true);
     }
+
+
     @Override
     public void sing() {
         System.out.println("Quack quack");
