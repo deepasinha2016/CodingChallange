@@ -10,7 +10,7 @@ public class Duck extends Bird{
 
 
     @Override
-    public void sing() {
-        System.out.println("Quack quack");
+    public String sing() {
+        return "Quack , quack";
     }
 }

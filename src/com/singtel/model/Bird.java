@@ -1,6 +1,6 @@
 package com.singtel.model;
 
-public class Bird  extends Animal implements IMotion{
+public class Bird   implements IMotion{
 
     private boolean canSwim, canFly, canSing;
 
@@ -23,15 +23,15 @@ public class Bird  extends Animal implements IMotion{
 
 
 
-    public void sing() {
-        System.out.println("I am singing");
+    public String sing() {
+        return "I am singing";
     }
 
     public boolean isCanSwim() {
         return canSwim;
     }
 
-    @Override
+
     public boolean isCanFly() {
         return canFly;
     }

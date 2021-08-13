@@ -12,12 +12,14 @@ public class Parrot extends Bird{
     }
 
     @Override
-    public void sing() {
+    public String sing() {
         if(nearByPlace.equalsIgnoreCase("HouseWithDogs"))
-        System.out.print("Woof,woof");
+        return "Woof, woof";
         else if(nearByPlace.equalsIgnoreCase("HouseWithCats"))
-            System.out.print("Me ow");
+            return "Me ow";
         else if(nearByPlace.equalsIgnoreCase("FarmNearRooster"))
-            System.out.print("Cock-a-doodle-doo");
+            return "Cock-a-doodle-doo";
+        else
+            return "I am singing";
     }
 }
