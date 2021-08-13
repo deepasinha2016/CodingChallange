@@ -18,10 +18,6 @@ public class Bird   implements IMotion{
 
     }
 
-    public void swim(){
-            System.out.println("I am swimming");
-
-    }
 
 
 
