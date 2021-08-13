@@ -30,6 +30,10 @@ public class ObjFactory {
                 return new Butterfly();
             else if(str.equalsIgnoreCase("Caterpillar"))
                 return new Caterpillar();
+            else if(str.equalsIgnoreCase("Dog"))
+                return new Dog();
+            else if(str.equalsIgnoreCase("Cat"))
+                return new Cat();
             else
                 return new Animal();
         }

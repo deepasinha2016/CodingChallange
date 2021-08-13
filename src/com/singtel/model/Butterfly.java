@@ -4,4 +4,5 @@ public class Butterfly extends Animal{
     public  Butterfly(){
        super(false,true);
     }
+
 }

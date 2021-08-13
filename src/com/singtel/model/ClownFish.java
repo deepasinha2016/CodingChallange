@@ -6,8 +6,9 @@ public class ClownFish  extends  Fish{
         super("Orange","Small");
     }
 
-    public void joke(){
+    public boolean joke(){
         System.out.println("I joke");
+        return true;
     }
 
     @Override

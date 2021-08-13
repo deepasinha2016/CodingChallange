@@ -13,6 +13,8 @@ public class Bird   implements IMotion{
 
 
     public Bird() {
+        this.canFly = true;
+        this.canSing = true;
 
     }
 

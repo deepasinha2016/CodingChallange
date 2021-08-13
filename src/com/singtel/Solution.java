@@ -66,4 +66,6 @@ public class Solution {
         System.out.println("Number of species that can fly:" + flyCount );
     }
 
+
+
 }
