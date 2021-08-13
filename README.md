@@ -1,4 +1,14 @@
 # SingtelCodingChallange
 coding test
-#Animal is the parent class. It's method walk() has been made public to be accessed by the child class Bird.
-#  Bird is the child of Animal. Fly method has been made public.
+Section A: Compile time errors resolved.
+Section B: Model fishes added
+Section C: Model for butterfly and caterpillar added
+Section D. Count of animals
+
+Factory pattern has been followed to make the class instantiation easy and configurable.
+
+Interface IMotiion  with default method has been implemented so that code redundancy could be removed.
+
+Interface IFish with swim() method defined, so  that Dolhin class could use this method without inheriting Fish class.
+
+Parrot class returns different sound depending upon the nearByPlace argument passed.
